@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FUNCTIONS</title>
+</head>
+<body>
+    <p>Global and Local Variation</p>
+    <button onclick="calc()">CLICK ME</button>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <script>
+        var a = 10;
+        function calc()
+        {
+            var b = 5;
+            document.getElementById('d1').innerHTML = b * a;
+        }
+        document.getElementById('d2').innerHTML = a;
+        document.getElementById('d2').innerHTML = b;
+    </script>
+</body>
